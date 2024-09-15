@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/09.png" alt="1" />
+          <h1>Hundru </h1>
+          <div class="details">
+            <h2>Hundru Waterfall</h2>
+            <p>GOLA</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/17.png" alt="2" />
+          <h1>Mirror</h1>
+          <div class="details">
+            <h2>NUCLEUS</h2>
+            <p>RANCHI</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/20.png" alt="3" />
+          <h1>POSE</h1>
+          <div class="details">
+            <h2>Nagpur</h2>
+            <p>Maharastra</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="Images/13.png" alt="4" />
+          <h1>Bike</h1>
+          <div class="details">
+            <h2>Ayodhiya Hill</h2>
+            <p>West Benagal</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/16.png" alt="5" />
+          <h1>POSE</h1>
+          <div class="details">
+            <h2>NAGPUR</h2>
+            <p>MAHARASTRA</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/18.png" alt="6" />
+          <h1>MOVIE</h1>
+          <div class="details">
+            <h2>JD HI STREET</h2>
+            <p>RANCHI</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/11.png" alt="7" />
+          <h1>Coffee</h1>
+          <div class="details">
+            <h2>Iconic</h2>
+            <p>Ranchi</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
